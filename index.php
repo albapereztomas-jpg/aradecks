@@ -453,6 +453,73 @@ $tier_names = [
             font-family: 'Poppins', sans-serif;
         }
         .copy-btn:hover { background-color: #3a1d75; transform: translateY(-1px); }
+        /* --- OPTIMIZACIÓN PREMIUM PARA MÓVILES --- */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px 10px;
+            }
+
+            header h1 {
+                font-size: 2.2rem; /* Título un poco más pequeño en móviles */
+            }
+
+            .color-filters {
+                gap: 6px;
+                margin-bottom: 25px;
+            }
+
+            .filter-btn {
+                padding: 8px 14px;
+                font-size: 0.8rem; /* Botones de colores más compactos */
+            }
+
+            /* Convertimos la fila horizontal en un diseño vertical limpio */
+            .deck-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 14px;
+                padding: 18px 20px;
+            }
+
+            .position-box {
+                width: auto;
+                font-size: 1.1rem;
+                border-bottom: 2px solid #edf2f7;
+                padding-bottom: 4px;
+                width: 100%;
+            }
+
+            /* Separador visual para los datos del torneo y el botón */
+            .stats-container {
+                width: 100%;
+                justify-content: space-between;
+                gap: 10px;
+                border-top: 1px solid #f1f0f7;
+                padding-top: 14px;
+            }
+
+            .games-count {
+                text-align: left; /* El texto del piloto ya no se alinea a la derecha */
+                font-size: 0.75rem;
+            }
+
+            .win-rate-badge {
+                min-width: auto;
+                font-size: 0.8rem;
+                padding: 6px 12px;
+                border-radius: 8px;
+            }
+
+            /* Hacemos que la lista de 50 cartas se vea en una sola columna en el móvil */
+            .card-grid-list {
+                grid-template-columns: 1fr;
+                gap: 6px;
+            }
+            
+            .decklist-panel {
+                padding: 16px;
+            }
+        }
     </style>
 </head>
 <body>
