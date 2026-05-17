@@ -262,8 +262,8 @@ $tier_names = [
     padding: 30px 20px;
     -webkit-font-smoothing: antialiased;
 
-    /* REVISA QUE EL NOMBRE Y LA EXTENSIÓN COINCIDAN AQUÍ */
-    background-image: url('fondo.jpg'); 
+    /* CAPA DE CONTROL: El 0.82 hace que tenga un 82% de blanco encima tapando la intensidad */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82)), url('fondo.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
