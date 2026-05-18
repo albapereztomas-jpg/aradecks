@@ -413,7 +413,7 @@ if ($current_tab === 'fun') {
             gap: 10px;
         }
 
-        /* --- NUEVO BADGE DE TIER INTERNO --- */
+        /* --- BADGE DE TIER INTERNO --- */
         .inline-tier-badge {
             font-size: 0.7rem;
             font-weight: 700;
@@ -527,6 +527,7 @@ if ($current_tab === 'fun') {
 
         <div class="ranking-list">
             <?php 
+            $global_position = 1; // Contador inicializado correctamente para el listado continuo
             foreach ($legal_decks as $deck): 
                 $podium_class = '';
                 if ($current_tab === 'meta') {
