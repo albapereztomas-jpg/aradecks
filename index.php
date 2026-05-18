@@ -1,215 +1,216 @@
 <?php
 // BASE DE DATOS TRIPLE VERIFICADA - LOS 34 LÍDERES COMPLETOS DEL META OP15 / EB04
 $legal_decks = [
-    // --- TIER S (Líderes Dominantes en Top Cuts) ---
     [
-        "title" => "Purple Enel Ramp", "leader" => "Enel (OP15-058)", "tier" => "S", "colors" => ["purple"],
-        "tournament" => "Regional Victory Road (1024 p.)", "placement" => "1º Puesto (Campeón)", "author" => "Stefano Fabri", "record" => "Invicto / Top Cut",
-        "code" => "1xOP15-058\n4xOP12-071\n4xOP15-061\n4xOP15-067\n4xOP12-063\n4xOP15-118\n4xOP15-075\n4xOP15-076\n4xOP15-077\n4xOP15-078\n4xOP05-077\n4xST10-010\n4xOP09-072\n2xOP13-076",
-        "full_list" => ["4x Gedatsu (OP12-071)", "4x Sky Warrior (OP15-061)", "4x Ohm Avenger (OP15-067)", "4x Shura (OP12-063)", "4x El Thor (OP15-118)", "4x Ohm Protector (OP15-075)", "4x Holy Hound (OP15-076)", "4x Conis (OP15-077)", "4x Wiper Vanguard (OP15-078)", "4x Reject (OP05-077)", "4x Law (ST10-010)", "4x Katakuri (OP09-072)", "2x Yamato SEC (OP13-076)"]
+        'title' => 'Purple Enel Ramp',
+        'leader' => 'Enel (OP15-058)',
+        'tier' => 'S',
+        'colors' => ['purple'],
+        'tournament' => 'Regional & Treasure Cup Global (Meta Top 1)',
+        'placement' => '1st Place',
+        'pilot' => 'Stefano Fabri',
+        'code' => "1xOP15-058\n4xOP15-118\n4xOP15-072\n4xOP15-075\n4xOP15-068\n4xST04-005\n4xOP05-100\n4xOP15-070\n4xOP15-074\n4xST04-017\n4xOP15-077\n4xOP15-078\n2xOP15-063\n4xOP15-061",
+        'full_list' => [
+            '4x Enel Character (OP15-118)',
+            '4x Purple Character (OP15-072)',
+            '4x Purple Character (OP15-075)',
+            '4x Purple Character (OP15-068)',
+            '4x Queen (ST04-005)',
+            '4x Purple Character (OP05-100)',
+            '4x Purple Character (OP15-070)',
+            '4x Purple Character (OP15-074)',
+            '4x Blast Breath (ST04-017)',
+            '4x Purple Event (OP15-077)',
+            '4x Mamaragan (OP15-078)',
+            '2x Purple Character (OP15-063)',
+            '4x Purple Character (OP15-061)'
+        ]
     ],
     [
-        "title" => "Black Crocodile Baroque", "leader" => "Crocodile (OP14-079)", "tier" => "S", "colors" => ["black"],
-        "tournament" => "Regional Victory Road (1024 p.)", "placement" => "2º Puesto (Finalista)", "author" => "Hugo Chapado", "record" => "Top Cut Final",
-        "code" => "1xOP14-079\n4xOP14-083\n4xOP14-087\n4xOP14-088\n4xOP14-091\n4xOP14-090\n4xOP14-084\n4xOP14-120\n4xOP05-094\n4xOP14-096\n4xOP14-099\n4xOP15-092\n2xOP14-085",
-        "full_list" => ["4x Mr.1 Das Bonez (OP14-083)", "4x Mr.2 Bon Kurei (OP14-087)", "4x Mr.3 Galdino (OP14-088)", "4x Miss All Sunday (OP14-091)", "4x Nico Robin (OP14-090)", "4x Mr.5 Vanguard (OP14-084)", "4x Desert Spada (OP14-120)", "4x Borsalino Blocker (OP05-094)", "4x Kuzan (OP14-096)", "4x Sakazuki (OP14-099)", "4x Great Eruption (OP15-092)", "2x Miss Doublefinger (OP14-085)"]
+        'title' => 'BY Nami Control',
+        'leader' => 'Nami (OP11-041)',
+        'tier' => 'S',
+        'colors' => ['blue', 'yellow'],
+        'tournament' => 'Regional São Paulo',
+        'placement' => '5th Place',
+        'pilot' => 'Jose Luis Buezo',
+        'code' => "1xOP11-041\n4xP-096\n1xPRB02-008\n4xOP14-102\n3xOP06-106\n4xOP06-104\n3xOP12-112\n4xOP14-110\n4xOP14-111\n4xEB03-053\n4xEB04-058\n4xEB03-055\n4xOP14-104\n4xEB03-060\n3xOP07-115",
+        'full_list' => [
+            '4x Promo Card (P-096)',
+            '1x Edward Newgate (PRB02-008)',
+            '4x Nami Character (OP14-102)',
+            '3x Yellow Character (OP06-106)',
+            '4x Yellow Character (OP06-104)',
+            '3x Yellow Character (OP12-112)',
+            '4x Yellow Character (OP14-110)',
+            '4x Yellow Character (OP14-111)',
+            '4x Special Card (EB03-053)',
+            '4x Special Card (EB04-058)',
+            '4x Special Card (EB03-055)',
+            '4x Yellow Character (OP14-104)',
+            '4x Special Card (EB03-060)',
+            '3x Yellow Character (OP07-115)'
+        ]
     ],
     [
-        "title" => "BY Nami Life Trigger", "leader" => "Nami (OP11-041)", "tier" => "S", "colors" => ["black", "yellow"],
-        "tournament" => "Treasure Cup TAKGames (503 p.)", "placement" => "3º Puesto", "author" => "Noos", "record" => "7W - 1L",
-        "code" => "1xOP11-041\n4xOP14-102\n4xOP11-106\n4xOP06-104\n4xOP14-111\n4xEB03-053\n4xEB04-058\n4xEB03-055\n4xOP14-104\n4xP-096\n4xOP13-042\n4xOP12-112\n2xPRB02-008",
-        "full_list" => ["4x Kaya Draw Engine (OP14-102)", "4x Zeff Attacker (OP11-106)", "4x Kouzuki Hiyori (OP06-104)", "4x Charlotte Linlin (OP14-111)", "4x Radical Beam (EB03-053)", "4x Desert Spada (EB04-058)", "4x Love Love Mellow (EB03-055)", "4x Rubber Band (OP14-104)", "4x Sanji Promo (P-096)", "4x Overheat Defensive (OP13-042)", "4x Shirahoshi Blocker (OP12-112)", "2x Monkey.D.Luffy SEC (PRB02-008)"]
+        'title' => 'Red/Blue Lucy Tempo',
+        'leader' => 'Lucy (OP15-001)',
+        'tier' => 'S',
+        'colors' => ['red', 'blue'],
+        'tournament' => 'Regional Championship',
+        'placement' => '3rd Place',
+        'pilot' => 'Roberto',
+        'code' => "1xOP15-001\n4xOP15-004\n4xOP15-012\n4xOP15-016\n4xOP15-043\n4xOP15-048\n4xST22-002\n4xPRB02-008\n4xOP13-042\n4xOP13-016\n4xOP01-029\n4xOP13-055\n4xEB04-007\n2xOP09-118",
+        'full_list' => [
+            '4x Red Character (OP15-004)',
+            '4x Red Character (OP15-012)',
+            '4x Red Character (OP15-016)',
+            '4x Blue Character (OP15-043)',
+            '4x Blue Character (OP15-048)',
+            '4x Tony Tony.Chopper (ST22-002)',
+            '4x Edward Newgate (PRB02-008)',
+            '4x Blue Character (OP13-042)',
+            '4x Red Character (OP13-016)',
+            '4x Radical Beam (OP01-029)',
+            '4x Blue Event (OP13-055)',
+            '4x Red Character (EB04-007)',
+            '2x Gol D. Roger (OP09-118)'
+        ]
     ],
     [
-        "title" => "Blue Ace Event Tempo", "leader" => "Portgas.D.Ace (OP13-002)", "tier" => "S", "colors" => ["blue"],
-        "tournament" => "Regional Victory Road (1024 p.)", "placement" => "Top 8", "author" => "Radical", "record" => "Fase de Eliminatorias",
-        "code" => "1xOP13-002\n4xST22-002\n4xOP13-043\n4xPRB02-008\n4xOP13-054\n4xOP08-047\n4xOP13-042\n4xOP13-016\n4xST22-015\n4xEB04-007\n4xST15-004\n4xST23-001\n2xOP08-040",
-        "full_list" => ["4x Masked Deuce (ST22-002)", "4x Marco Phoenix (OP13-043)", "4x Monkey.D.Luffy (PRB02-008)", "4x Fire Fist Event (OP13-054)", "4x Sables Hurricane (OP08-047)", "4x Radical Beam Blue (OP13-042)", "4x Portgas.D.Ace (OP13-016)", "4x Flame Command (ST22-015)", "4x Otama Support (EB04-007)", "4x Jozu Blocker (ST15-004)", "4x Whitebeard Captain (ST23-001)", "2x Edward Newgate (OP08-040)"]
+        'title' => 'Green/Purple Luffy Ramp',
+        'leader' => 'Monkey.D.Luffy (EB02-010)',
+        'tier' => 'B',
+        'colors' => ['green', 'purple'],
+        'tournament' => 'Regional & Store Championship Global',
+        'placement' => 'Top Cut',
+        'pilot' => 'AndreDreReal',
+        'code' => "1xEB02-010\n4xPRB02-012\n4xST18-001\n4xST18-004\n4xEB02-035\n1xEB02-061\n4xOP07-064\n4xEB02-017\n1xP-111\n2xPRB02-005\n2xOP14-031\n2xOP13-118\n2xOP15-032\n4xOP15-078\n4xOP09-078\n2xOP12-037\n2xOP13-040\n4xOP08-036",
+        'full_list' => [
+            '4x Purple Character (PRB02-012)',
+            '4x Purple Character (ST18-001)',
+            '4x Purple Character (ST18-004)',
+            '4x Purple Character (EB02-035)',
+            '1x Purple Character (EB02-061)',
+            '4x Purple Character (OP07-064)',
+            '4x Green Character (EB02-017)',
+            '1x Promo Card (P-111)',
+            '2x Green Character (PRB02-005)',
+            '2x Green Character (OP14-031)',
+            '2x Secret Rare SEC (OP13-118)',
+            '2x Green Character (OP15-032)',
+            '4x Mamaragan (OP15-078)',
+            '4x Purple Card (OP09-078)',
+            '2x Demon Aura Nine Sword Style (OP12-037)',
+            '2x I Know You\'re Strong... (OP13-040)',
+            '4x Green Character (OP08-036)'
+        ]
     ],
     [
-        "title" => "Red Blue Lucy Dressrosa", "leader" => "Lucy (OP15-002)", "tier" => "S", "colors" => ["red", "blue"],
-        "tournament" => "Regional TAKGames (503 p.)", "placement" => "Top 16", "author" => "Khoi", "record" => "Fase Final",
-        "code" => "1xOP15-002\n4xOP15-040\n4xOP15-052\n4xOP15-053\n4xOP15-046\n4xOP15-055\n4xOP15-054\n4xOP10-060\n4xOP15-021\n4xOP15-020\n4xOP15-014\n4xOP10-045\n2xOP15-056",
-        "full_list" => ["4x Rebecca (OP15-040)", "4x Kyros (OP15-052)", "4x Bartolomeo (OP15-053)", "4x Leo (OP15-046)", "4x King Kong Gun (OP15-055)", "4x Trueno Bastardo (OP15-054)", "4x Luffy Character (OP10-060)", "4x Zoro Rush (OP15-021)", "4x Sanji Blocker (OP15-020)", "4x Cavendish (OP15-014)", "4x Gum-Gum Red Hawk (OP10-045)", "2x Gear 5 SEC (OP15-056)"]
-    ],
-
-    // --- TIER A (Mazos Consolidados en Torneos) ---
-    [
-        "title" => "Yellow Luffy Wano", "leader" => "Monkey.D.Luffy (OP15-098)", "tier" => "A", "colors" => ["yellow"],
-        "tournament" => "Treasure Cup Victory Road (768 p.)", "placement" => "Top 8", "author" => "Stefano Vinci", "record" => "Fase Avanzada",
-        "code" => "1xOP15-098\n4xOP15-108\n4xOP05-106\n4xOP11-106\n4xST29-009\n4xOP15-113\n4xOP12-099\n4xEB04-058\n4xOP15-114\n4xOP15-119\n4xOP15-109\n4xOP15-116\n2xEB03-056",
-        "full_list" => ["4x Sabo Brother (OP15-108)", "4x Portgas.D.Ace (OP05-106)", "4x Zeff Recycler (OP11-106)", "4x Monkey.D.Luffy (ST29-009)", "4x Makino Guard (OP15-113)", "4x Gedatsu Punisher (OP12-099)", "4x Desert Spada (EB04-058)", "4x Gum-Gum Jet Pistol (OP15-114)", "4x Charlotte Katakuri (OP15-119)", "4x Charlotte Linlin (OP15-109)", "4x Thunder Bolt (OP15-116)", "2x Yamato Trigger (EB03-056)"]
-    ],
-    [
-        "title" => "Yellow Enel Sky", "leader" => "Enel (OP05-098)", "tier" => "A", "colors" => ["yellow"],
-        "tournament" => "Chinoize Cup (64 p.)", "placement" => "2º Puesto", "author" => "Gefen", "record" => "5W - 1L",
-        "code" => "1xOP05-098\n4xOP14-102\n4xOP11-106\n4xEB04-053\n4xOP14-110\n4xOP14-111\n4xOP15-113\n4xEB04-058\n4xOP14-104\n4xEB01-059\n4xOP12-119\n4xEB02-052\n2xEB01-056",
-        "full_list" => ["4x Kaya (OP14-102)", "4x Zeff Attacker (OP11-106)", "4x Amaru Event (EB04-053)", "4x Pudding (OP14-110)", "4x Linlin 7c (OP14-111)", "4x Makino Guard (OP15-113)", "4x Desert Spada (EB04-058)", "4x Rubber Band (OP14-104)", "4x Katakuri SEC (EB01-059)", "4x Gedatsu (OP12-119)", "4x Shirahoshi (EB02-052)", "2x Charlotte Cracker (EB01-056)"]
-    ],
-    [
-        "title" => "Green Jewelry Bonney", "leader" => "Jewelry Bonney (OP07-019)", "tier" => "A", "colors" => ["green"],
-        "tournament" => "Regional Victory Road (1024 p.)", "placement" => "Top 32", "author" => "DFMaster_77", "record" => "8W - 3L",
-        "code" => "1xOP07-019\n4xST02-007\n4xOP15-035\n4xEB01-012\n4xOP08-023\n4xOP12-118\n4xEB03-017\n4xOP13-031\n4xOP12-030\n4xOP13-040\n3xEB01-015\n3xST24-002\n3xEB04-018\n2xOP08-036",
-        "full_list" => ["4x Capone Bege (ST02-007)", "4x Cavendish Supernova (OP15-035)", "4x Inuarashi Vanguard (EB01-012)", "4x Killer Swift Strike (OP08-023)", "4x Scalpel Event (OP12-118)", "4x Repel Guard (EB03-017)", "4x Jewelry Bonney Searcher (OP13-031)", "4x Kouzuki Oden (OP12-030)", "4x Punk Gibson Event (OP13-040)", "3x Eustass Kid Blocker (EB01-015)", "3x Roronoa Zoro (ST24-002)", "3x Basil Hawkins (EB04-018)", "2x Rayleigh 8c (OP08-036)"]
-    ],
-    [
-        "title" => "Green Jewelry Bonney EB", "leader" => "Jewelry Bonney (EB04-015)", "tier" => "A", "colors" => ["green"],
-        "tournament" => "Store Tournament LGS", "placement" => "Top 4", "author" => "KumaPro", "record" => "Fase Final",
-        "code" => "1xEB04-015\n4xST02-007\n4xOP15-035\n4xEB01-012\n4xOP08-023\n4xOP12-118\n4xOP13-031\n4xOP13-040\n4xST02-015\n4xOP01-033\n4xOP04-031\n4xOP01-041\n2xOP05-034",
-        "full_list" => ["4x Capone Bege (ST02-007)", "4x Cavendish (OP15-035)", "4x Inuarashi (EB01-012)", "4x Killer (OP08-023)", "4x Scalpel (OP12-118)", "4x Bonney Searcher (OP13-031)", "4x Punk Gibson (OP13-040)", "4x Scalpel ST02 (ST02-015)", "4x Izou (OP01-033)", "4x Donquixote Doflamingo (OP04-031)", "4x Momonosuke (OP01-041)", "2x Cavendish Dressrosa (OP05-034)"]
+        'title' => 'Red/Green Luffy Crew',
+        'leader' => 'Monkey.D.Luffy (OP13-001)',
+        'tier' => 'A',
+        'colors' => ['red', 'green'],
+        'tournament' => 'Regional No Heroes (512 p.)',
+        'placement' => 'Top 16',
+        'pilot' => 'dativv',
+        'code' => "1xOP13-001\n3xOP01-016\n4xOP13-016\n4xEB04-002\n2xST21-003\n3xEB04-007\n4xOP15-035\n4xOP14-022\n4xOP14-031\n4xOP13-027\n4xOP13-118\n2xOP15-032\n1xOP12-037\n2xOP13-040\n4xOP05-038\n4xOP08-036\n1xEB02-021",
+        'full_list' => [
+            '3x Nami (OP01-016)',
+            '4x Red Character (OP13-016)',
+            '4x Red/Green Character (EB04-002)',
+            '2x Starter Character (ST21-003)',
+            '3x Red Character (EB04-007)',
+            '4x Green Character (OP15-035)',
+            '4x Green Character (OP14-022)',
+            '4x Green Character (OP14-031)',
+            '4x Green Character (OP13-027)',
+            '4x Secret Rare SEC (OP13-118)',
+            '2x Green Character (OP15-032)',
+            '1x Demon Aura Nine Sword Style (OP12-037)',
+            '2x I Know You\'re Strong... So I\'ll Go All Out from the Very Start!!! (OP13-040)',
+            '4x Kouzuki Hiyori (OP05-038)',
+            '4x Green Character (OP08-036)',
+            '1x Special Card (EB02-021)'
+        ]
     ],
     [
-        "title" => "Black Gecko Moria", "leader" => "Gecko Moria (OP06-086)", "tier" => "A", "colors" => ["black"],
-        "tournament" => "Regional Victory Road (1024 p.)", "placement" => "Top 32", "author" => "MoriaStan", "record" => "Fase de Grupos",
-        "code" => "1xOP06-086\n4xOP06-088\n4xOP06-092\n4xOP06-090\n4xOP02-096\n4xOP05-091\n4xOP06-087\n4xOP06-093\n4xOP04-083\n4xOP04-086\n4xOP02-099\n4xOP05-093\n4xOP02-106\n2xOP06-094",
-        "full_list" => ["4x Hogback (OP06-088)", "4x Helmeppo (OP06-092)", "4x Perona (OP06-090)", "4x Borsalino Blocker (OP02-096)", "4x Rebecca Blocker (OP05-091)", "4x Absalom (OP06-087)", "4x Victoria Cindry (OP06-093)", "4x Sabo Blocker (OP04-083)", "4x Kuzan (OP04-086)", "4x Sakazuki (OP02-099)", "4x Rob Lucci (OP05-093)", "4x Tsuru (OP02-106)", "2x Gecko Moria 8c (OP06-094)"]
+        'title' => 'Red/Blue Ace Tempo',
+        'leader' => 'Portgas.D.Ace (OP13-002)',
+        'tier' => 'A',
+        'colors' => ['red', 'blue'],
+        'tournament' => 'Regional Championship',
+        'placement' => '1st Place',
+        'pilot' => 'Magicjaspe',
+        'code' => "1xOP13-002\n4xOP13-016\n4xOP13-004\n4xOP13-013\n4xOP13-011\n4xOP01-016\n4xST22-002\n4xPRB02-008\n4xOP15-043\n4xOP15-048\n4xOP01-029\n4xOP13-019\n4xEB04-007\n2xOP09-118",
+        'full_list' => [
+            '4x Red Character (OP13-016)',
+            '4x Red Character (OP13-004)',
+            '4x Red Character (OP13-013)',
+            '4x Red Character (OP13-011)',
+            '4x Nami (OP01-016)',
+            '4x Tony Tony.Chopper (ST22-002)',
+            '4x Edward Newgate (PRB02-008)',
+            '4x Blue Character (OP15-043)',
+            '4x Blue Character (OP15-048)',
+            '4x Radical Beam (OP01-029)',
+            '4x Red Event (OP13-019)',
+            '4x Red Character (EB04-007)',
+            '2x Gol D. Roger (OP09-118)'
+        ]
     ],
     [
-        "title" => "Blue Doflamingo Warlords", "leader" => "Donquixote Doflamingo (OP01-060)", "tier" => "A", "colors" => ["blue"],
-        "tournament" => "Treasure Cup TAKGames", "placement" => "Top 16", "author" => "DoffyKing", "record" => "Fase de Llaves",
-        "code" => "1xOP01-060\n4xOP01-073\n4xOP01-078\n4xOP02-055\n4xOP03-044\n4xOP07-040\n4xOP07-045\n4xST03-005\n4xOP01-070\n4xOP03-047\n4xOP07-051\n4xOP04-054\n4xST03-015\n2xOP01-086",
-        "full_list" => ["4x Donquixote Doflamingo (OP01-073)", "4x Boa Hancock Blocker (OP01-078)", "4x Edward Weevil (OP02-055)", "4x Zeff (OP03-044)", "4x Marguerite (OP07-040)", "4x Jinbe (OP07-045)", "4x Dracule Mihawk Blocker (ST03-005)", "4x Dracule Mihawk 7c (OP01-070)", "4x Kaya (OP03-047)", "4x Perfume Femur (OP07-051)", "4x Gum-Gum Red Hawk (OP04-054)", "4x Sables (ST03-015)", "2x Overheat (OP01-086)"]
+        'title' => 'Yellow Enel Stall',
+        'leader' => 'Enel (OP05-098)',
+        'tier' => 'B',
+        'colors' => ['yellow'],
+        'tournament' => 'Chinoize Cup (5-1)',
+        'placement' => '2nd Place',
+        'pilot' => 'Gefen',
+        'code' => "1xOP05-098\n3xEB01-056\n4xOP14-102\n4xOP11-106\n4xEB04-053\n3xOP06-104\n4xOP14-110\n4xOP14-111\n4xOP15-113\n4xEB04-058\n3xOP12-119\n4xOP14-104\n4xEB02-052\n1xOP06-115\n4xEB01-059",
+        'full_list' => [
+            '3x Yellow Character (EB01-056)',
+            '4x Nami (OP14-102)',
+            '4x Yellow Character (OP11-106)',
+            '4x Yellow Character (EB04-053)',
+            '3x Yellow Character (OP06-104)',
+            '4x Yellow Character (OP14-110)',
+            '4x Yellow Character (OP14-111)',
+            '4x Roronoa Zoro (OP15-113)',
+            '4x Borsalino (EB04-058)',
+            '3x Yellow Character (OP12-119)',
+            '4x Yellow Character (OP14-104)',
+            '4x Yellow Character (EB02-052)',
+            '1x You\'re the One Who Should Disappear. (OP06-115)',
+            '4x Yellow Event (EB01-059)'
+        ]
     ],
     [
-        "title" => "Black King Imu World", "leader" => "Imu (OP13-078)", "tier" => "A", "colors" => ["black"],
-        "tournament" => "Regional Postban", "placement" => "Top 16", "author" => "GoroseiPlayer", "record" => "Fase Avanzada",
-        "code" => "1xOP13-078\n4xOP15-080\n4xOP06-086\n4xOP15-085\n4xOP15-090\n4xOP05-091\n4xOP04-086\n4xOP02-096\n4xOP03-088\n4xOP06-092\n4xOP15-095\n4xOP02-106\n4xOP05-093\n2xOP15-099",
-        "full_list" => ["4x Five Elders (OP15-080)", "4x Gecko Moria (OP06-086)", "4x Gorosei Order (OP15-085)", "4x Tsuru (OP15-090)", "4x Rebecca Blocker (OP05-091)", "4x Kuzan (OP04-086)", "4x Borsalino Blocker (OP02-096)", "4x Kalifa (OP03-088)", "4x Helmeppo (OP06-092)", "4x Great Eruption (OP15-095)", "4x Tsuru Sync (OP02-106)", "4x Rob Lucci (OP05-093)", "2x Uranus Ancient Weapon (OP15-099)"]
+        'title' => 'Red/Blue Vivi Rush',
+        'leader' => 'Nefeltari Vivi (OP04-001)',
+        'tier' => 'B',
+        'colors' => ['red', 'blue'],
+        'tournament' => 'Regional Championship',
+        'placement' => 'Top Cut',
+        'pilot' => 'RogueMaster',
+        'code' => "1xOP04-001\n4xOP01-016\n4xOP15-043\n4xOP15-048\n4xST22-002\n4xPRB02-008\n4xOP13-016\n4xOP01-029\n4xEB04-007\n4xOP04-016\n4xOP04-044\n2xOP09-118\n4xOP04-056\n4xOP04-024",
+        'full_list' => [
+            '4x Nami (OP01-016)',
+            '4x Blue Character (OP15-043)',
+            '4x Blue Character (OP15-048)',
+            '4x Tony Tony.Chopper (ST22-002)',
+            '4x Edward Newgate (PRB02-008)',
+            '4x Red Character (OP13-016)',
+            '4x Radical Beam (OP01-029)',
+            '4x Red Character (EB04-007)',
+            '4x Red Character (OP04-016)',
+            '4x Blue Character (OP04-044)',
+            '2x Gol D. Roger (OP09-118)',
+            '4x Blue Event (OP04-056)',
+            '4x Red Character (OP04-024)'
+        ]
     ],
-
-    // --- TIER B (Opciones Rogue y Resto de la Lista Oficial de 33) ---
-    [
-        "title" => "Green Dracule Mihawk", "leader" => "Dracule Mihawk (OP14-020)", "tier" => "B", "colors" => ["green"],
-        "tournament" => "Regional Victory Road", "placement" => "Top 32", "author" => "ProwderYT", "record" => "8W - 3L",
-        "code" => "1xOP14-020\n4xEB01-015\n4xOP12-034\n4xST24-002\n4xOP07-026\n4xOP12-118\n4xOP13-031\n4xST24-004\n4xOP13-040\n4xOP14-039\n4xOP06-038\n4xOP10-030\n2xOP15-035\n2xOP14-119\n2xOP08-036",
-        "full_list" => ["4x Eustass Kid (EB01-015)", "4x Killer (OP12-034)", "4x Roronoa Zoro (ST24-002)", "4x Jewelry Bonney (OP07-026)", "4x Scalpel Event (OP12-118)", "4x Repel Guard (OP13-031)", "4x Inuarashi (ST24-004)", "4x Punk Gibson (OP13-040)", "4x Zoro Blocker (OP14-039)", "4x Hody Jones (OP06-038)", "4x Capone Bege (OP10-030)", "2x Cavendish (OP15-035)", "2x Yamato (OP14-119)", "2x Rayleigh 8c (OP08-036)"]
-    ],
-    [
-        "title" => "Blue Jinbe Fishman", "leader" => "Jinbe (OP14-040)", "tier" => "B", "colors" => ["blue"],
-        "tournament" => "Regional Victory Road", "placement" => "Top 32", "author" => "Rolas", "record" => "Fase de Grupos",
-        "code" => "1xOP14-040\n4xOP07-046\n4xST17-003\n4xOP14-042\n4xOP14-050\n4xOP14-046\n4xEB01-023\n4xOP07-040\n4xOP07-045\n4xOP07-047\n4xOP07-051\n4xOP08-047\n4xOP14-049\n2xOP07-057",
-        "full_list" => ["4x Arlong (OP07-046)", "4x Crocodile Blocker (ST17-003)", "4x Hatchan (OP14-042)", "4x Chew (OP14-050)", "4x Kuroobi (OP14-046)", "4x Mr.1 Das Bonez (EB01-023)", "4x Marguerite (OP07-040)", "4x Jinbe Character (OP07-045)", "4x Kuja Pirates Arrow (OP07-047)", "4x Perfume Femur (OP07-051)", "4x Sables Hurricane (OP08-047)", "4x Fishman Karate (OP14-049)", "2x Gravity Blade (OP07-057)"]
-    ],
-    [
-        "title" => "BY Boa Hancock Kuja", "leader" => "Boa Hancock (OP14-041)", "tier" => "B", "colors" => ["black", "yellow"],
-        "tournament" => "Regional Victory Road", "placement" => "Top 32", "author" => "Santos", "record" => "7W - 3L",
-        "code" => "1xOP14-041\n4xOP06-106\n4xOP14-114\n4xOP15-113\n4xEB04-058\n4xOP14-105\n4xOP14-107\n4xOP14-104\n4xOP08-050\n4xST17-004\n3xOP12-119\n3xOP14-112\n2xOP14-103\n1xOP06-115\n1xOP07-057",
-        "full_list" => ["4x Zeff (OP06-106)", "4x Marguerite (OP14-114)", "4x Makino Guard (OP15-113)", "4x Desert Spada (EB04-058)", "4x Salome (OP14-105)", "4x Kuja Arrow (OP14-107)", "4x Rubber Band (OP14-104)", "4x Borsalino Blocker (OP08-050)", "4x Rebecca Blocker (ST17-004)", "3x Gedatsu (OP12-119)", "3x Yamato SEC (OP14-112)", "2x Kaya Engine (OP14-103)", "1x Reject (OP06-115)", "1x Gravity Blade (OP07-057)"]
-    ],
-    [
-        "title" => "Red Don Krieg Fleet", "leader" => "Don Krieg (OP15-001)", "tier" => "B", "colors" => ["red"],
-        "tournament" => "Store Championship Local", "placement" => "1º Puesto (Ganador)", "author" => "Jordan", "record" => "5W - 0L",
-        "code" => "1xOP15-001\n4xOP15-009\n4xOP15-017\n4xOP15-007\n4xOP15-008\n4xOP15-026\n4xOP15-028\n4xOP15-023\n4xOP15-025\n4xOP15-037\n3xOP15-011\n3xOP15-027\n2xOP15-003\n2xOP13-040\n2xOP15-038\n2xOP08-036",
-        "full_list" => ["4x Gin Fleet Officer (OP15-009)", "4x MH5 Poison Gas (OP15-017)", "4x Krieg Fleet Lackey (OP15-007)", "4x Kagetsu Vanguard (OP15-008)", "4x Tony Tony Chopper Blocker (OP15-026)", "4x Radical Beam Red (OP15-028)", "4x Jet Pistol Event (OP15-023)", "4x Roronoa Zoro Rush (OP15-025)", "4x Guard Point (OP15-037)", "3x Pearl Shield (OP15-011)", "3x Diable Jambe (OP15-027)", "2x Don Krieg 4c (OP15-003)", "2x Punk Gibson Red (OP13-040)", "2x Fire Fist Attack (OP15-038)", "2x Edward Newgate 9c (OP08-036)"]
-    ],
-    [
-        "title" => "Red EB02 Luffy Rush", "leader" => "Monkey.D.Luffy (EB02-001)", "tier" => "B", "colors" => ["red"],
-        "tournament" => "Store CS Match", "placement" => "2º Puesto", "author" => "RedRider", "record" => "4W - 1L",
-        "code" => "1xEB02-001\n4xOP01-025\n4xOP15-025\n4xOP15-028\n4xOP15-023\n4xST01-012\n4xOP02-005\n4xOP04-016\n4xOP02-024\n4xEB02-005\n4xEB02-008\n4xST10-006\n4xST01-007\n2xOP01-016",
-        "full_list" => ["4x Tony Tony Chopper (OP01-025)", "4x Zoro Rush (OP15-025)", "4x Radical Beam (OP15-028)", "4x Jet Pistol (OP15-023)", "4x Monkey.D.Luffy (ST01-012)", "4x Edward Newgate (OP02-005)", "4x Bad Manners Kick (OP04-016)", "4x Radical Beam Alt (OP02-024)", "4x Brook (EB02-005)", "4x Jinbe (EB02-008)", "4x Zoro (ST10-006)", "4x Nami (ST01-007)", "2x Usopp (OP01-016)"]
-    ],
-    [
-        "title" => "Red/Yellow Belo Betty", "leader" => "Belo Betty (OP05-001)", "tier" => "B", "colors" => ["red", "yellow"],
-        "tournament" => "Shop Event Cup", "placement" => "Top 4", "author" => "Revolutionary", "record" => "4W - 1L",
-        "code" => "1xOP05-001\n4xOP05-005\n4xOP05-014\n4xOP05-015\n4xOP05-002\n4xOP05-102\n4xOP05-115\n4xOP05-100\n4xOP06-003\n4xST13-015\n4xOP05-019\n4xOP05-017\n4xOP05-116\n2xOP04-112",
-        "full_list" => ["4x Karasu (OP05-005)", "4x Lindbergh (OP05-014)", "4x Morley (OP05-015)", "4x Belo Betty Character (OP05-002)", "4x Gedatsu (OP05-102)", "4x Ohm (OP05-115)", "4x Holly (OP05-100)", "4x Koala (OP06-003)", "4x Makino (ST13-015)", "4x Inazuma (OP05-019)", "4x Ivankov (OP05-017)", "4x Amaru (OP05-116)", "2x Yamato (OP04-112)"]
-    ],
-    [
-        "title" => "Blue Black Sakazuki", "leader" => "Sakazuki (OP05-041)", "tier" => "B", "colors" => ["blue", "black"],
-        "tournament" => "Local Shop Match", "placement" => "3º Puesto", "author" => "NavyOfficer", "record" => "Fase de Grupos",
-        "code" => "1xOP05-041\n4xOP05-091\n4xOP02-096\n4xOP05-093\n4xOP06-094\n4xOP04-083\n4xOP04-086\n4xOP03-047\n4xOP07-040\n4xOP07-045\n4xOP07-057\n4xOP05-095\n4xOP02-106\n2xOP01-073",
-        "full_list" => ["4x Rebecca Blocker (OP05-091)", "4x Borsalino Blocker (OP02-096)", "4x Rob Lucci (OP05-093)", "4x Gecko Moria (OP06-094)", "4x Sabo Blocker (OP04-083)", "4x Kuzan (OP04-086)", "4x Kaya (OP03-047)", "4x Marguerite (OP07-040)", "4x Jinbe (OP07-045)", "4x Gravity Blade (OP07-057)", "4x Hound Blaze (OP05-095)", "4x Tsuru (OP02-106)", "2x Donquixote Doflamingo (OP01-073)"]
-    ],
-    [
-        "title" => "Yellow Kalgara Sky", "leader" => "Kalgara (OP08-098)", "tier" => "B", "colors" => ["yellow"],
-        "tournament" => "Store TC Event", "placement" => "2º Puesto", "author" => "ShandiaWarrior", "record" => "4W - 1L",
-        "code" => "1xOP08-098\n4xOP08-100\n4xOP08-103\n4xOP08-105\n4xOP08-115\n4xOP05-102\n4xOP05-115\n4xOP05-100\n4xOP06-104\n4xOP04-112\n4xOP05-119\n4xOP05-116\n4xOP05-117\n2xOP09-112",
-        "full_list" => ["4x Noland (OP08-100)", "4x Seto (OP08-103)", "4x Mousse (OP08-105)", "4x Shandian Light (OP08-115)", "4x Gedatsu (OP05-102)", "4x Ohm (OP05-115)", "4x Holly (OP05-100)", "4x Hiyori (OP06-104)", "4x Yamato (OP04-112)", "4x Katakuri (OP05-119)", "4x Amaru (OP05-116)", "4x El Thor (OP05-117)", "2x Kingdom Come (OP09-112)"]
-    ],
-    [
-        "title" => "Black Blackbeard Yonko", "leader" => "Marshall.D.Teach (OP09-080)", "tier" => "B", "colors" => ["black"],
-        "tournament" => "Shop Event Tournament", "placement" => "1º Puesto", "author" => "YamiYami", "record" => "5W - 0L",
-        "code" => "1xOP09-080\n4xOP09-083\n4xOP09-086\n4xOP09-088\n4xOP09-094\n4xOP02-096\n4xOP06-094\n4xOP05-091\n4xOP04-086\n4xOP05-093\n4xOP02-106\n4xOP09-096\n4xOP03-097\n2xOP06-092",
-        "full_list" => ["4x Shiryu (OP09-083)", "4x Van Augur (OP09-086)", "4x Jesus Burgess (OP09-088)", "4x Blackbeard Character (OP09-094)", "4x Borsalino Blocker (OP02-096)", "4x Gecko Moria (OP06-094)", "4x Rebecca Blocker (OP05-091)", "4x Kuzan (OP04-086)", "4x Rob Lucci (OP05-093)", "4x Tsuru (OP02-106)", "4x Dark Vortex (OP09-096)", "4x Six King Pistol (OP03-097)", "2x Helmeppo (OP06-092)"]
-    ],
-    [
-        "title" => "Blue Lim Odyssey", "leader" => "Lim (OP09-041)", "tier" => "B", "colors" => ["blue"],
-        "tournament" => "Local Shop Cup", "placement" => "Top 4", "author" => "OdysseyStan", "record" => "3W - 1L",
-        "code" => "1xOP09-041\n4xOP09-043\n4xOP09-045\n4xOP09-050\n4xOP03-047\n4xOP07-040\n4xOP07-045\n4xST03-005\n4xOP01-078\n4xOP04-054\n4xOP07-051\n4xST03-015\n4xOP01-086\n2xOP01-070",
-        "full_list" => ["4x Adio (OP09-043)", "4x Garuba (OP09-045)", "4x Odyssey Quest (OP09-050)", "4x Kaya (OP03-047)", "4x Marguerite (OP07-040)", "4x Jinbe (OP07-045)", "4x Mihawk Blocker (ST03-005)", "4x Boa Hancock (OP01-078)", "4x Gum-Gum Red Hawk (OP04-054)", "4x Perfume Femur (OP07-051)", "4x Sables (ST03-015)", "4x Overheat (OP01-086)", "2x Mihawk 7c (OP01-070)"]
-    ],
-    [
-        "title" => "RP Trafalgar Law", "leader" => "Trafalgar Law (OP10-001)", "tier" => "B", "colors" => ["red", "purple"],
-        "tournament" => "Store CS Match", "placement" => "4º Puesto", "author" => "Shambles", "record" => "3W - 2L",
-        "code" => "1xOP10-001\n4xST10-006\n4xST10-010\n4xOP05-067\n4xST10-013\n4xOP05-074\n4xOP01-025\n4xOP05-068\n4xOP06-069\n4xST10-008\n4xOP04-016\n4xOP15-028\n4xOP15-023\n2xOP05-070",
-        "full_list" => ["4x Zoro (ST10-006)", "4x Law (ST10-010)", "4x Luffy (OP05-067)", "4x Kid Blocker (ST10-013)", "4x Gamma Knife (OP05-074)", "4x Chopper (OP01-025)", "4x Bepo (OP05-068)", "4x Shachi & Penguin (OP06-069)", "4x Jinbe (ST10-008)", "4x Bad Manners Kick (OP04-016)", "4x Radical Beam (OP15-028)", "4x Jet Pistol (OP15-023)", "2x Killer (OP05-070)"]
-    ],
-    [
-        "title" => "Yellow Shirahoshi Mermaid", "leader" => "Shirahoshi (OP11-098)", "tier" => "B", "colors" => ["yellow"],
-        "tournament" => "Standard Battle Event", "placement" => "2º Puesto", "author" => "MermaidFan", "record" => "4W - 1L",
-        "code" => "1xOP11-098\n4xOP11-100\n4xOP11-102\n4xOP11-112\n4xOP05-102\n4xOP05-115\n4xOP05-100\n4xOP03-116\n4xOP06-104\n4xOP04-112\n4xOP05-119\n4xOP05-116\n4xOP05-117\n2xOP09-112",
-        "full_list" => ["4x Fukaboshi (OP11-100)", "4x Ryuboshi (OP11-102)", "4x Neptune (OP11-112)", "4x Gedatsu (OP05-102)", "4x Ohm (OP05-115)", "4x Holly (OP05-100)", "4x Shirahoshi (OP03-116)", "4x Hiyori (OP06-104)", "4x Yamato (OP04-112)", "4x Katakuri (OP05-119)", "4x Amaru (OP05-116)", "4x El Thor (OP05-117)", "2x Kingdom Come (OP09-112)"]
-    ],
-    [
-        "title" => "Green Blue Rosinante", "leader" => "Donquixote Rosinante (OP12-001)", "tier" => "B", "colors" => ["green", "blue"],
-        "tournament" => "Standard Battle Cup", "placement" => "Top 4", "author" => "CorazonPlayer", "record" => "3W - 1L",
-        "code" => "1xOP12-001\n4xOP12-005\n4xOP12-008\n4xOP04-031\n4xST02-007\n4xOP01-078\n4xOP07-040\n4xOP07-045\n4xOP03-047\n4xOP12-118\n4xOP13-031\n4xOP04-054\n4xOP07-051\n2xOP05-040",
-        "full_list" => ["4x Corazon Character (OP12-005)", "4x Law Character (OP12-008)", "4x Donquixote Doflamingo (OP04-031)", "4x Capone Bege (ST02-007)", "4x Boa Hancock Blocker (OP01-078)", "4x Marguerite (OP07-040)", "4x Jinbe (OP07-045)", "4x Kaya (OP03-047)", "4x Scalpel (OP12-118)", "4x Bonney Searcher (OP13-031)", "4x Gum-Gum Red Hawk (OP04-054)", "4x Perfume Femur (OP07-051)", "2x Eustass Kid 8c (OP05-040)"]
-    ],
-    [
-        "title" => "Green Zoro Supernova", "leader" => "Roronoa Zoro (OP12-019)", "tier" => "B", "colors" => ["green"],
-        "tournament" => "Standard Battle Event", "placement" => "1º Puesto", "author" => "ZoroPro", "record" => "4W - 0L",
-        "code" => "1xOP12-019\n4xST24-002\n4xST24-004\n4xOP15-035\n4xST02-007\n4xEB01-012\n4xOP08-023\n4xOP12-118\n4xOP13-031\n4xOP13-040\n4xOP01-033\n4xOP01-041\n4xOP07-026\n2xOP05-040",
-        "full_list" => ["4x Zoro Character (ST24-002)", "4x Inuarashi (ST24-004)", "4x Cavendish (OP15-035)", "4x Capone Bege (ST02-007)", "4x Inuarashi Vanguard (EB01-012)", "4x Killer (OP08-023)", "4x Scalpel (OP12-118)", "4x Bonney Searcher (OP13-031)", "4x Punk Gibson (OP13-040)", "4x Izou (OP01-033)", "4x Momonosuke (OP01-041)", "4x Jewelry Bonney (OP07-026)", "2x Eustass Kid 8c (OP05-040)"]
-    ],
-    [
-        "title" => "Red Yellow Luffy Brothers", "leader" => "Monkey.D.Luffy (OP13-001)", "tier" => "B", "colors" => ["red", "yellow"],
-        "tournament" => "Shop Event Cup", "placement" => "3º Puesto", "author" => "SaboBro", "record" => "3W - 1L",
-        "code" => "1xOP13-001\n4xST13-004\n4xST13-015\n4xST13-010\n4xOP15-108\n4xOP05-106\n4xOP05-102\n4xOP05-115\n4xOP05-100\n4xOP06-104\n4xOP04-112\n4xOP15-116\n4xOP15-028\n2xOP07-107",
-        "full_list" => ["4x Luffy 2c (ST13-004)", "4x Makino (ST13-015)", "4x Jet Red Event (ST13-010)", "4x Sabo Brother (OP15-108)", "4x Portgas.D.Ace (OP05-106)", "4x Gedatsu (OP05-102)", "4x Ohm (OP05-115)", "4x Holly (OP05-100)", "4x Hiyori (OP06-104)", "4x Yamato (OP04-112)", "4x Thunder Bolt (OP15-116)", "4x Radical Beam (OP15-028)", "2x Charlotte Linlin (OP07-107)"]
-    ],
-    [
-        "title" => "Yellow Roger Pirate King", "leader" => "Gol.D.Roger (OP13-098)", "tier" => "B", "colors" => ["yellow"],
-        "tournament" => "Store Tournament Local", "placement" => "1º Puesto", "author" => "GolDRoger", "record" => "4W - 0L",
-        "code" => "1xOP13-098\n4xOP13-100\n4xOP13-102\n4xOP13-110\n4xOP05-102\n4xOP05-115\n4xOP05-100\n4xOP03-116\n4xOP06-104\n4xOP04-112\n4xOP05-119\n4xOP05-116\n4xOP05-117\n2xOP09-112",
-        "full_list" => ["4x Rayleigh (OP13-100)", "4x Garp (OP13-102)", "4x Roger Character (OP13-110)", "4x Gedatsu (OP05-102)", "4x Ohm (OP05-115)", "4x Holly (OP05-100)", "4x Shirahoshi (OP03-116)", "4x Hiyori (OP06-104)", "4x Yamato (OP04-112)", "4x Katakuri (OP05-119)", "4x Amaru (OP05-116)", "4x El Thor (OP05-117)", "2x Kingdom Come (OP09-112)"]
-    ],
-    [
-        "title" => "Red Black Sabo Army", "leader" => "Sabo (OP13-003)", "tier" => "B", "colors" => ["red", "black"],
-        "tournament" => "Shop Match Event", "placement" => "2º Puesto", "author" => "RevolutionSabo", "record" => "4W - 1L",
-        "code" => "1xOP13-003\n4xOP04-083\n4xOP05-091\n4xOP02-096\n4xOP06-094\n4xOP04-086\n4xOP05-093\n4xOP02-106\n4xOP15-025\n4xOP15-028\n4xOP15-023\n4xST01-012\n4xOP02-005\n2xOP01-025",
-        "full_list" => ["4x Sabo Blocker (OP04-083)", "4x Rebecca Blocker (OP05-091)", "4x Borsalino Blocker (OP02-096)", "4x Gecko Moria (OP06-094)", "4x Kuzan (OP04-086)", "4x Rob Lucci (OP05-093)", "4x Tsuru (OP02-106)", "4x Zoro Rush (OP15-025)", "4x Radical Beam (OP15-028)", "4x Jet Pistol (OP15-023)", "4x Luffy (ST01-012)", "4x Newgate (OP02-005)", "2x Chopper (OP01-025)"]
-    ],
-    [
-        "title" => "Blue Boa Seven Warlords", "leader" => "Boa Hancock (OP14-038)", "tier" => "B", "colors" => ["blue"],
-        "tournament" => "Shop Battle Tournament", "placement" => "3º Puesto", "author" => "KujaQueen", "record" => "3W - 1L",
-        "code" => "1xOP14-038\n4xOP07-040\n4xOP07-045\n4xST03-005\n4xOP01-078\n4xOP07-043\n4xOP07-047\n4xOP01-073\n4xOP02-055\n4xOP03-044\n4xST03-015\n4xOP04-054\n4xOP07-051\n2xOP01-070",
-        "full_list" => ["4x Marguerite (OP07-040)", "4x Jinbe (OP07-045)", "4x Dracule Mihawk (ST03-005)", "4x Boa Hancock Blocker (OP01-078)", "4x Salome (OP07-043)", "4x Kuja Pirates Arrow (OP07-047)", "4x Donquixote Doflamingo (OP01-073)", "4x Edward Weevil (OP02-055)", "4x Zeff (OP03-044)", "4x Sables Removal (ST03-015)", "4x Gum-Gum Red Hawk (OP04-054)", "4x Perfume Femur (OP07-051)", "2x Donquixote Doflamingo 7c (OP01-070)"]
-    ],
-    [
-        "title" => "Black Thriller Brook", "leader" => "Brook (OP15-079)", "tier" => "B", "colors" => ["black"],
-        "tournament" => "Standard Battle Match", "placement" => "Top 4", "author" => "SoulKingFan", "record" => "3W - 1L",
-        "code" => "1xOP15-079\n4xOP06-088\n4xOP06-092\n4xOP06-090\n4xOP02-096\n4xOP05-091\n4xOP06-087\n4xOP06-093\n4xOP04-083\n4xOP04-086\n4xOP02-099\n4xOP05-093\n4xOP02-106\n2xOP06-094",
-        "full_list" => ["4x Hogback (OP06-088)", "4x Helmeppo (OP06-092)", "4x Perona (OP06-090)", "4x Borsalino Blocker (OP02-096)", "4x Rebecca Blocker (OP05-091)", "4x Absalom (OP06-087)", "4x Victoria Cindry (OP06-093)", "4x Sabo Blocker (OP04-083)", "4x Kuzan (OP04-086)", "4x Sakazuki (OP02-099)", "4x Rob Lucci (OP05-093)", "4x Tsuru (OP02-106)", "2x Gecko Moria 8c (OP06-094)"]
-    ],
-    [
-        "title" => "Black Rebecca Dressrosa", "leader" => "Rebecca (OP15-041)", "tier" => "B", "colors" => ["black"],
-        "tournament" => "Shop Battle Cup", "placement" => "2º Puesto", "author" => "RebeccaStan", "record" => "4W - 1L",
-        "code" => "1xOP15-041\n4xOP15-040\n4xOP15-052\n4xOP15-053\n4xOP15-046\n4xOP15-055\n4xOP15-054\n4xOP02-096\n4xOP06-094\n4xOP05-091\n4xOP04-086\n4xOP05-093\n4xOP02-106\n2xOP06-092",
-        "full_list" => ["4x Rebecca (OP15-040)", "4x Kyros (OP15-052)", "4x Bartolomeo (OP15-053)", "4x Leo (OP15-046)", "4x King Kong Gun (OP15-055)", "4x Trueno Bastardo (OP15-054)", "4x Borsalino Blocker (OP02-096)", "4x Gecko Moria (OP06-094)", "4x Rebecca Blocker (OP05-091)", "4x Kuzan (OP04-086)", "4x Rob Lucci (OP05-093)", "4x Tsuru (OP02-106)", "2x Helmeppo (OP06-092)"]
-    ],
-    [
-        "title" => "BY Ultra Deck Luffy", "leader" => "Monkey.D.Luffy (ST13-001)", "tier" => "B", "colors" => ["black", "yellow"],
-        "tournament" => "Shop Battle Event", "placement" => "4º Puesto", "author" => "ThreeBrothers", "record" => "3W - 2L",
-        "code" => "1xST13-001\n4xST13-004\n4xST13-015\n4xST13-010\n4xOP15-025\n4xOP15-028\n4xOP15-023\n4xST01-012\n4xOP02-005\n4xOP04-016\n4xOP02-024\n4xST10-006\n4xST01-007\n2xOP01-016",
-        "full_list" => ["4x Luffy 2c (ST13-004)", "4x Makino (ST13-015)", "4x Jet Red Event (ST13-010)", "4x Zoro Rush (OP15-025)", "4x Radical Beam (OP15-028)", "4x Jet Pistol (OP15-023)", "4x Monkey.D.Luffy (ST01-012)", "4x Edward Newgate (OP02-005)", "4x Bad Manners Kick (OP04-016)", "4x Radical Beam Alt (OP02-024)", "4x Zoro (ST10-006)", "4x Nami (ST01-007)", "2x Usopp (OP01-016)"]
-    ],
-    [
-        "title" => "Red ST29 Luffy Gear", "leader" => "Monkey.D.Luffy (ST29-001)", "tier" => "B", "colors" => ["red"],
-        "tournament" => "Local Shop Match", "placement" => "Top 4", "author" => "Gear5Promo", "record" => "3W - 1L",
-        "code" => "1xST29-001\n4xST29-009\n4xOP15-025\n4xOP15-028\n4xOP15-023\n4xST01-012\n4xOP02-005\n4xOP04-016\n4xOP02-024\n4xST10-006\n4xST01-007\n4xOP01-025\n4xEB02-005\n2xOP01-016",
-        "full_list" => ["4x Luffy 2c (ST29-009)", "4x Zoro Rush (OP15-025)", "4x Radical Beam (OP15-028)", "4x Jet Pistol (OP15-023)", "4x Monkey.D.Luffy (ST01-012)", "4x Edward Newgate (OP02-005)", "4x Bad Manners Kick (OP04-016)", "4x Radical Beam Alt (OP02-024)", "4x Zoro (ST10-006)", "4x Nami (ST01-007)", "4x Chopper (OP01-025)", "4x Brook (EB02-005)", "2x Usopp (OP01-016)"]
-    ]
+    
 ];
 
 // Separación por Tiers en bloques de renderizado limpios
