@@ -6,7 +6,7 @@ if ($current_tab === 'fun') {
     // Si estamos en la pestaña fun, cargamos el archivo de casuals
     include 'decks_casual.php';
 } else {
-    // BASE DE DATOS TRIPLE VERIFICADA - MAZOS COMPETITIVOS OP15 / EB04
+    // BASE DE DATOS TRIPLE VERIFICADA - MAZOS COMPETITIVOS OP15 / EB04 ORDERNADOS DE MEJOR A PEOR
     $legal_decks = [
         [
             'title' => 'Purple Enel Ramp',
@@ -85,35 +85,6 @@ if ($current_tab === 'fun') {
             ]
         ],
         [
-            'title' => 'Green/Purple Luffy Ramp',
-            'leader' => 'Monkey.D.Luffy (EB02-010)',
-            'tier' => 'B',
-            'colors' => ['green', 'purple'],
-            'tournament' => 'Regional & Store Championship Global',
-            'placement' => 'Top Cut',
-            'pilot' => 'AndreDreReal',
-            'code' => "1xEB02-010\n4xPRB02-012\n4xST18-001\n4xST18-004\n4xEB02-035\n1xEB02-061\n4xOP07-064\n4xEB02-017\n1xP-111\n2xPRB02-005\n2xOP14-031\n2xOP13-118\n2xOP15-032\n4xOP15-078\n4xOP09-078\n2xOP12-037\n2xOP13-040\n4xOP08-036",
-            'full_list' => [
-                '4x Purple Character (PRB02-012)',
-                '4x Purple Character (ST18-001)',
-                '4x Purple Character (ST18-004)',
-                '4x Purple Character (EB02-035)',
-                '1x Purple Character (EB02-061)',
-                '4x Purple Character (OP07-064)',
-                '4x Green Character (EB02-017)',
-                '1x Promo Card (P-111)',
-                '2x Green Character (PRB02-005)',
-                '2x Green Character (OP14-031)',
-                '2x Secret Rare SEC (OP13-118)',
-                '2x Green Character (OP15-032)',
-                '4x Mamaragan (OP15-078)',
-                '4x Purple Card (OP09-078)',
-                '2x Demon Aura Nine Sword Style (OP12-037)',
-                '2x I Know You\'re Strong... (OP13-040)',
-                '4x Green Character (OP08-036)'
-            ]
-        ],
-        [
             'title' => 'Red/Green Luffy Crew',
             'leader' => 'Monkey.D.Luffy (OP13-001)',
             'tier' => 'A',
@@ -161,6 +132,62 @@ if ($current_tab === 'fun') {
                 '4x Red Event (OP13-019)',
                 '4x Red Character (EB04-007)',
                 '2x Gol D. Roger (OP09-118)'
+            ]
+        ],
+        [
+            'title' => 'Black/Yellow Moria Control',
+            'leader' => 'Gecko Moria (OP14-080)',
+            'tier' => 'A',
+            'colors' => ['black', 'yellow'],
+            'tournament' => 'EXGrand HoloPlazaTCG (Europe)',
+            'placement' => '1st Place (4-0)',
+            'pilot' => 'VaunghkTCG',
+            'code' => "1xOP14-080\n4xOP06-091\n4xOP15-084\n4xPRB02-013\n2xOP07-085\n4xOP14-102\n4xOP13-113\n2xOP14-103\n4xOP14-100\n4xOP14-110\n4xOP14-111\n4xOP15-113\n2xEB04-058\n3xOP14-104\n4xOP14-112\n1xEB04-061",
+            'full_list' => [
+                '4x Borsalino (OP06-091)',
+                '4x Black Character (OP15-084)',
+                '4x Special Card (PRB02-013)',
+                '2x Black Character (OP07-085)',
+                '4x Nami (OP14-102)',
+                '4x Yellow Character (OP13-113)',
+                '2x Yellow Character (OP14-103)',
+                '4x Yellow Character (OP14-100)',
+                '4x Yellow Character (OP14-110)',
+                '4x Yellow Character (OP14-111)',
+                '4x Roronoa Zoro (OP15-113)',
+                '2x Borsalino (EB04-058)',
+                '3x Yellow Character (OP14-104)',
+                '4x Yellow Character (OP14-112)',
+                '1x Special Card (EB04-061)'
+            ]
+        ],
+        [
+            'title' => 'Green/Purple Luffy Ramp',
+            'leader' => 'Monkey.D.Luffy (EB02-010)',
+            'tier' => 'B',
+            'colors' => ['green', 'purple'],
+            'tournament' => 'Regional & Store Championship Global',
+            'placement' => 'Top Cut',
+            'pilot' => 'AndreDreReal',
+            'code' => "1xEB02-010\n4xPRB02-012\n4xST18-001\n4xST18-004\n4xEB02-035\n1xEB02-061\n4xOP07-064\n4xEB02-017\n1xP-111\n2xPRB02-005\n2xOP14-031\n2xOP13-118\n2xOP15-032\n4xOP15-078\n4xOP09-078\n2xOP12-037\n2xOP13-040\n4xOP08-036",
+            'full_list' => [
+                '4x Purple Character (PRB02-012)',
+                '4x Purple Character (ST18-001)',
+                '4x Purple Character (ST18-004)',
+                '4x Purple Character (EB02-035)',
+                '1x Purple Character (EB02-061)',
+                '4x Purple Character (OP07-064)',
+                '4x Green Character (EB02-017)',
+                '1x Promo Card (P-111)',
+                '2x Green Character (PRB02-005)',
+                '2x Green Character (OP14-031)',
+                '2x Secret Rare SEC (OP13-118)',
+                '2x Green Character (OP15-032)',
+                '4x Mamaragan (OP15-078)',
+                '4x Purple Card (OP09-078)',
+                '2x Demon Aura Nine Sword Style (OP12-037)',
+                '2x I Know You\'re Strong... (OP13-040)',
+                '4x Green Character (OP08-036)'
             ]
         ],
         [
