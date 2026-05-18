@@ -1,5 +1,5 @@
 <?php
-// BASE DE DATOS TRIPLE VERIFICADA - LOS 34 LÍDERES COMPLETOS DEL META OP15 / EB04
+// BASE DE DATOS TRIPLE VERIFICADA - MAZOS COMPETITIVOS OP15 / EB04
 $legal_decks = [
     [
         'title' => 'Purple Enel Ramp',
@@ -114,7 +114,7 @@ $legal_decks = [
         'tournament' => 'Regional No Heroes (512 p.)',
         'placement' => 'Top 16',
         'pilot' => 'dativv',
-        'code' => "1xOP13-001\n3xOP01-016\n4xOP13-016\n4xEB04-002\n2xST21-003\n3xEB04-007\n4xOP15-035\n4xOP14-022\n4xOP14-031\n4xOP13-027\n4xOP13-118\n2xOP15-032\n1xOP12-037\n2xOP13-040\n4xOP05-038\n4xOP08-036\n1xEB02-021",
+        'code' => "1xOP13-001\n3xOP01-016\n4xOP13-016\n4xEB04-002\n2xST21-003\n3xEB04-007\n4xOP15-035\n4xOP14-022\n4xOP14-031\n4xOP13-027\n4xOP13-118\n2xOP15-032\n1xOP12-037\n2xOP13-040\n4xOP05-038\n4xOP05-038\n4xOP08-036\n1xEB02-021",
         'full_list' => [
             '3x Nami (OP01-016)',
             '4x Red Character (OP13-016)',
@@ -142,7 +142,7 @@ $legal_decks = [
         'tournament' => 'Regional Championship',
         'placement' => '1st Place',
         'pilot' => 'Magicjaspe',
-        'code' => "1xOP13-002\n4xOP13-016\n4xOP13-004\n4xOP13-013\n4xOP13-011\n4xOP01-016\n4xST22-002\n4xPRB02-008\n4xOP15-043\n4xOP15-048\n4xOP01-029\n4xOP13-019\n4xEB04-007\n2xOP09-118",
+        'code' => "1xOP13-002\n4xOP13-016\n4xOP13-004\n4xOP13-013\n4xOP13-011\n4xOP01-016\n4xST22-002\n4xPRB02-008\n4xOP15-043\n4xOP15-048\n4xOP01-029\n4xOP13-019\n4xRed Character (EB04-007)\n2xOP09-118",
         'full_list' => [
             '4x Red Character (OP13-016)',
             '4x Red Character (OP13-004)',
@@ -210,7 +210,6 @@ $legal_decks = [
             '4x Red Character (OP04-024)'
         ]
     ],
-    
 ];
 
 // Separación por Tiers en bloques de renderizado limpios
@@ -220,9 +219,9 @@ foreach ($legal_decks as $deck) {
 }
 
 $tier_names = [
-    'S' => 'Tier S — Reyes del Meta (Máxima Presencia)',
-    'A' => 'Tier A — Mazos Competitivos de Alto Nivel',
-    'B' => 'Tier B — Variantes Rogue y Opciones de Contra-Meta'
+    'S' => 'Tier S — Arquetipos Dominantes',
+    'A' => 'Tier A — Mazos de Alto Rendimiento',
+    'B' => 'Tier B — Variantes Rogue y Estrategias Opcionales'
 ];
 ?>
 
@@ -231,7 +230,7 @@ $tier_names = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AraDecks - Meta Oficial OP15</title>
+    <title>AraDecks - Listas de Mazos OP15 / EB04</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -257,19 +256,17 @@ $tier_names = [
         }
 
        body {
-    font-family: 'Poppins', sans-serif;
-    color: var(--text-main);
-    margin: 0;
-    padding: 30px 20px;
-    -webkit-font-smoothing: antialiased;
-
-    /* CAPA DE CONTROL: El 0.82 hace que tenga un 82% de blanco encima tapando la intensidad */
-    background-image: linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82)), url('fondo.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-main);
+            margin: 0;
+            padding: 30px 20px;
+            -webkit-font-smoothing: antialiased;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82)), url('fondo.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
 
         header {
             text-align: center;
@@ -277,24 +274,22 @@ $tier_names = [
         }
 
         header h1 {
-    margin: 0;
-    color: var(--dark-purple);
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: -1px;
-    
-    /* Extra para resaltar sobre la imagen */
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 5px 25px;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-}
+            margin: 0;
+            color: var(--dark-purple);
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 5px 25px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
 
         header p {
             color: var(--text-muted);
             font-size: 1rem;
-            margin-top: 6px;
+            margin-top: 8px;
         }
 
         .container {
@@ -360,17 +355,15 @@ $tier_names = [
 
         .ranking-list { display: flex; flex-direction: column; gap: 14px; }
 
-       .deck-card-wrapper {
-    /* Fondo blanco con un 94% de opacidad para proteger el texto */
-    background-color: rgba(255, 255, 255, 0.94); 
-    backdrop-filter: blur(8px); /* Difumina ligeramente la imagen trasera */
-    
-    border-radius: 18px;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2); /* Sombra más marcada para que la tarjeta "flote" */
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    overflow: hidden;
-}
+        .deck-card-wrapper {
+            background-color: rgba(255, 255, 255, 0.94); 
+            backdrop-filter: blur(8px);
+            border-radius: 18px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1); 
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            overflow: hidden;
+        }
 
         .deck-card-wrapper:hover {
             transform: translateY(-2px);
@@ -386,7 +379,6 @@ $tier_names = [
             cursor: pointer;
         }
 
-        /* Bordes laterales elegantes acoplados al contenedor */
         .row-S { border-left: 5px solid var(--tier-s-color); }
         .row-A { border-left: 5px solid var(--tier-a-color); }
         .row-B { border-left: 5px solid var(--tier-b-color); }
@@ -417,7 +409,7 @@ $tier_names = [
 
         .win-rate-badge {
             font-size: 0.85rem; font-weight: 700; padding: 8px 16px; border-radius: 12px;
-            min-width: 140px; text-align: center;
+            min-width: 120px; text-align: center;
         }
         .badge-S { background-color: var(--tier-s-bg); color: var(--tier-s-color); }
         .badge-A { background-color: var(--tier-a-bg); color: var(--tier-a-color); }
@@ -454,72 +446,20 @@ $tier_names = [
             font-family: 'Poppins', sans-serif;
         }
         .copy-btn:hover { background-color: #3a1d75; transform: translateY(-1px); }
-        /* --- OPTIMIZACIÓN PREMIUM PARA MÓVILES --- */
+
+        /* MÓVILES */
         @media (max-width: 768px) {
-            body {
-                padding: 15px 10px;
-            }
-
-            header h1 {
-                font-size: 2.2rem; /* Título un poco más pequeño en móviles */
-            }
-
-            .color-filters {
-                gap: 6px;
-                margin-bottom: 25px;
-            }
-
-            .filter-btn {
-                padding: 8px 14px;
-                font-size: 0.8rem; /* Botones de colores más compactos */
-            }
-
-            /* Convertimos la fila horizontal en un diseño vertical limpio */
-            .deck-row {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 14px;
-                padding: 18px 20px;
-            }
-
-            .position-box {
-                width: auto;
-                font-size: 1.1rem;
-                border-bottom: 2px solid #edf2f7;
-                padding-bottom: 4px;
-                width: 100%;
-            }
-
-            /* Separador visual para los datos del torneo y el botón */
-            .stats-container {
-                width: 100%;
-                justify-content: space-between;
-                gap: 10px;
-                border-top: 1px solid #f1f0f7;
-                padding-top: 14px;
-            }
-
-            .games-count {
-                text-align: left; /* El texto del piloto ya no se alinea a la derecha */
-                font-size: 0.75rem;
-            }
-
-            .win-rate-badge {
-                min-width: auto;
-                font-size: 0.8rem;
-                padding: 6px 12px;
-                border-radius: 8px;
-            }
-
-            /* Hacemos que la lista de 50 cartas se vea en una sola columna en el móvil */
-            .card-grid-list {
-                grid-template-columns: 1fr;
-                gap: 6px;
-            }
-            
-            .decklist-panel {
-                padding: 16px;
-            }
+            body { padding: 15px 10px; }
+            header h1 { font-size: 2.2rem; }
+            .color-filters { gap: 6px; margin-bottom: 25px; }
+            .filter-btn { padding: 8px 14px; font-size: 0.8rem; }
+            .deck-row { flex-direction: column; align-items: flex-start; gap: 14px; padding: 18px 20px; }
+            .position-box { border-bottom: 2px solid #edf2f7; padding-bottom: 4px; width: 100%; }
+            .stats-container { width: 100%; justify-content: space-between; gap: 10px; border-top: 1px solid #f1f0f7; padding-top: 14px; }
+            .games-count { text-align: left; font-size: 0.75rem; }
+            .win-rate-badge { min-width: auto; font-size: 0.8rem; padding: 6px 12px; border-radius: 8px; }
+            .card-grid-list { grid-template-columns: 1fr; gap: 6px; }
+            .decklist-panel { padding: 16px; }
         }
     </style>
 </head>
@@ -527,7 +467,7 @@ $tier_names = [
 
     <header>
         <h1>AraDecks</h1>
-        <p>📊 Listas Oficiales Completas del Formato OP15 / EB04 — Extraídas de One Piece Top Decks</p>
+        <p>📊 Listas Actualizadas del Formato OP15 / EB04 — Listas para Ver y Probar</p>
     </header>
 
     <div class="container">
@@ -580,17 +520,17 @@ $tier_names = [
                                 
                                 <div class="stats-container">
                                     <div class="games-count">
-                                        Torneo: <?php echo htmlspecialchars($deck['tournament']); ?><br>
-                                        Piloto: <?php echo htmlspecialchars($deck['author']); ?>
+                                        Formato: OP15 / EB04<br>
+                                        Estructura: 50 Cartas
                                     </div>
                                     <div class="win-rate-badge badge-<?php echo $tier_letter; ?>">
-                                        <?php echo htmlspecialchars($deck['placement']); ?>
+                                        Ver Mazo
                                     </div>
                                 </div>
                             </div>
 
                             <div class="decklist-panel">
-                                <h4>📋 Mazo Completo Oficial de Torneo (50 Cartas) — Registro: <?php echo htmlspecialchars($deck['record']); ?>:</h4>
+                                <h4>📋 Listado de Cartas para Testeo:</h4>
                                 <ul class="card-grid-list">
                                     <?php foreach ($deck['full_list'] as $card_item): ?>
                                         <li><?php echo htmlspecialchars($card_item); ?></li>
