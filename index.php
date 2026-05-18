@@ -5,9 +5,6 @@ $current_tab = isset($_GET['tab']) ? $_GET['tab'] : 'meta';
 if ($current_tab === 'fun') {
     // Si estamos en la pestaña fun, cargamos el archivo de casuals
     include 'decks_casual.php';
-    $tier_names = [
-        'C' => 'Tier C — Mazos Casuals y Temáticos (Fun)'
-    ];
 } else {
     // BASE DE DATOS TRIPLE VERIFICADA - MAZOS COMPETITIVOS OP15 / EB04
     $legal_decks = [
@@ -218,18 +215,6 @@ if ($current_tab === 'fun') {
             ]
         ],
     ];
-
-    $tier_names = [
-        'S' => 'Tier S — Arquetipos Dominantes',
-        'A' => 'Tier A — Mazos de Alto Rendimiento',
-        'B' => 'Tier B — Variantes Rogue y Estrategias Opcionales'
-    ];
-}
-
-// Separación automática por Tiers en bloques de renderizado limpios
-$tiered_data = [];
-foreach ($legal_decks as $deck) {
-    $tiered_data[$deck['tier']][] = $deck;
 }
 ?>
 
@@ -253,7 +238,7 @@ foreach ($legal_decks as $deck) {
             --dark-purple: #4a2691;
             --lavender-pastel: #f3f0fa;
             
-            /* Paleta Pastel para Tiers */
+            /* Paletas Pastel para Tiers */
             --tier-s-bg: #fff5f7; --tier-s-color: #e53e3e;
             --tier-a-bg: #faf5ff; --tier-a-color: #805ad5;
             --tier-b-bg: #ebf8ff; --tier-b-color: #3182ce;
@@ -306,7 +291,7 @@ foreach ($legal_decks as $deck) {
             margin: 0 auto;
         }
 
-        /* --- SISTEMA PREMIUM DE PESTAÑAS (TABS) --- */
+        /* --- NAVIGATION TABS --- */
         .tabs-navigation {
             display: flex;
             justify-content: center;
@@ -340,7 +325,7 @@ foreach ($legal_decks as $deck) {
             border-color: var(--dark-purple);
         }
 
-        /* BOTONERA DE FILTROS ESTILIZADA */
+        /* FILTROS DE COLORES */
         .color-filters {
             display: flex;
             justify-content: center;
@@ -376,28 +361,8 @@ foreach ($legal_decks as $deck) {
         .btn-purple { border-bottom: 3px solid var(--c-purple); }
         .filter-btn.inactive { opacity: 0.35; transform: none; box-shadow: none; }
 
-        /* SECCIONES Y CABECERAS DE TIERS */
-        .tier-section {
-            margin-bottom: 45px;
-        }
-
-        .tier-header {
-            font-size: 1rem;
-            font-weight: 700;
-            padding: 8px 16px;
-            border-radius: 10px;
-            margin-bottom: 18px;
-            display: inline-block;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .header-S { background-color: var(--tier-s-bg); color: var(--tier-s-color); }
-        .header-A { background-color: var(--tier-a-bg); color: var(--tier-a-color); }
-        .header-B { background-color: var(--tier-b-bg); color: var(--tier-b-color); }
-        .header-C { background-color: var(--tier-c-bg); color: var(--tier-c-color); }
-
-        .ranking-list { display: flex; flex-direction: column; gap: 14px; }
+        /* LISTA CONTINUA DE MAZOS */
+        .ranking-list { display: flex; flex-direction: column; gap: 14px; margin-top: 10px; }
 
         .deck-card-wrapper {
             background-color: rgba(255, 255, 255, 0.94); 
@@ -423,6 +388,7 @@ foreach ($legal_decks as $deck) {
             cursor: pointer;
         }
 
+        /* Bordes de Tiers dinámicos en la tarjeta */
         .row-S { border-left: 5px solid var(--tier-s-color); }
         .row-A { border-left: 5px solid var(--tier-a-color); }
         .row-B { border-left: 5px solid var(--tier-b-color); }
@@ -434,14 +400,38 @@ foreach ($legal_decks as $deck) {
         .global-3 { color: #ed8936 !important; }
 
         .deck-info { flex: 1; }
-        .deck-title { font-size: 1.15rem; margin: 0 0 5px 0; color: var(--text-main); font-weight: 600; }
+        
+        /* Contenedor del título con el Badge de Tier al lado */
+        .deck-title { 
+            font-size: 1.15rem; 
+            margin: 0 0 5px 0; 
+            color: var(--text-main); 
+            font-weight: 600; 
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        /* --- BADGE DE TIER INTERNO --- */
+        .inline-tier-badge {
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: inline-block;
+        }
+        .tag-S { background-color: var(--tier-s-bg); color: var(--tier-s-color); }
+        .tag-A { background-color: var(--tier-a-bg); color: var(--tier-a-color); }
+        .tag-B { background-color: var(--tier-b-bg); color: var(--tier-b-color); }
+        .tag-C { background-color: var(--tier-c-bg); color: var(--tier-c-color); }
 
         .leader-box { display: flex; align-items: center; gap: 8px; }
         .deck-leader { font-size: 0.85rem; color: var(--text-muted); margin: 0; font-weight: 500; }
 
-        .color-dot {
-            width: 10px; height: 10px; border-radius: 50%; display: inline-block;
-        }
+        .color-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
         .dot-red { background-color: var(--c-red); }
         .dot-green { background-color: var(--c-green); }
         .dot-blue { background-color: var(--c-blue); }
@@ -535,74 +525,67 @@ foreach ($legal_decks as $deck) {
             <button class="filter-btn btn-purple" onclick="filterColor('purple')">Púrpura</button>
         </div>
 
-        <?php 
-        $global_position = 1; 
-        
-        foreach ($tiered_data as $tier_letter => $tier_decks): 
-            if (!empty($tier_decks)): 
-        ?>
-            <div class="tier-section" id="section-<?php echo $tier_letter; ?>">
-                <div class="tier-header header-<?php echo $tier_letter; ?>">
-                    <?php echo $tier_names[$tier_letter]; ?>
-                </div>
-                
-                <div class="ranking-list">
-                    <?php foreach ($tier_decks as $deck): 
-                        $podium_class = '';
-                        if ($current_tab === 'meta') {
-                            if ($global_position === 1) $podium_class = 'global-1';
-                            elseif ($global_position === 2) $podium_class = 'global-2';
-                            elseif ($global_position === 3) $podium_class = 'global-3';
-                        }
+        <div class="ranking-list">
+            <?php 
+            $global_position = 1; // Contador inicializado correctamente para el listado continuo
+            foreach ($legal_decks as $deck): 
+                $podium_class = '';
+                if ($current_tab === 'meta') {
+                    if ($global_position === 1) $podium_class = 'global-1';
+                    elseif ($global_position === 2) $podium_class = 'global-2';
+                    elseif ($global_position === 3) $podium_class = 'global-3';
+                }
 
-                        $color_classes = implode(' ', array_map(function($c) { return 'c-' . $c; }, $deck['colors']));
-                    ?>
-                        <div class="deck-card-wrapper <?php echo $color_classes; ?>">
-                            <div class="deck-row row-<?php echo $tier_letter; ?>" onclick="toggleDecklist(this)">
-                                <div class="position-box <?php echo $podium_class; ?>">
-                                    #<?php echo $global_position; ?>
-                                </div>
-                                
-                                <div class="deck-info">
-                                    <h3 class="deck-title"><?php echo htmlspecialchars($deck['title']); ?></h3>
-                                    <div class="leader-box">
-                                        <?php foreach($deck['colors'] as $c): ?>
-                                            <span class="color-dot dot-<?php echo $c; ?>"></span>
-                                        <?php endforeach; ?>
-                                        <p class="deck-leader">Líder: <?php echo htmlspecialchars($deck['leader']); ?></p>
-                                    </div>
-                                </div>
-                                
-                                <div class="stats-container">
-                                    <div class="games-count">
-                                        Formato: OP15 / EB04<br>
-                                        Estructura: 50 Cartas
-                                    </div>
-                                    <div class="win-rate-badge badge-<?php echo $tier_letter; ?>">
-                                        Ver Mazo
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="decklist-panel">
-                                <h4>📋 Listado de Cartas para Testeo:</h4>
-                                <ul class="card-grid-list">
-                                    <?php foreach ($deck['full_list'] as $card_item): ?>
-                                        <li><?php echo htmlspecialchars($card_item); ?></li>
-                                    <?php endforeach; ?>
-                                </ul>
-                                <button class="copy-btn" onclick="copyToClipboard(this, `<?php echo $deck['code']; ?>`)">📋 Copiar Listado Completo para OPTCGSim</button>
+                $color_classes = implode(' ', array_map(function($c) { return 'c-' . $c; }, $deck['colors']));
+            ?>
+                <div class="deck-card-wrapper <?php echo $color_classes; ?>">
+                    <div class="deck-row row-<?php echo $deck['tier']; ?>" onclick="toggleDecklist(this)">
+                        
+                        <div class="position-box <?php echo $podium_class; ?>">
+                            #<?php echo $global_position; ?>
+                        </div>
+                        
+                        <div class="deck-info">
+                            <h3 class="deck-title">
+                                <?php echo htmlspecialchars($deck['title']); ?>
+                                <span class="inline-tier-badge tag-<?php echo $deck['tier']; ?>">
+                                    Tier <?php echo $deck['tier']; ?>
+                                </span>
+                            </h3>
+                            <div class="leader-box">
+                                <?php foreach($deck['colors'] as $c): ?>
+                                    <span class="color-dot dot-<?php echo $c; ?>"></span>
+                                <?php endforeach; ?>
+                                <p class="deck-leader">Líder: <?php echo htmlspecialchars($deck['leader']); ?></p>
                             </div>
                         </div>
-                    <?php 
-                        $global_position++;
-                    endforeach; ?>
+                        
+                        <div class="stats-container">
+                            <div class="games-count">
+                                Formato: OP15 / EB04<br>
+                                Estructura: 50 Cartas
+                            </div>
+                            <div class="win-rate-badge badge-<?php echo $deck['tier']; ?>">
+                                Ver Mazo
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="decklist-panel">
+                        <h4>📋 Listado de Cartas para Testeo:</h4>
+                        <ul class="card-grid-list">
+                            <?php foreach ($deck['full_list'] as $card_item): ?>
+                                <li><?php echo htmlspecialchars($card_item); ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                        <button class="copy-btn" onclick="copyToClipboard(this, `<?php echo $deck['code']; ?>`)">📋 Copiar Listado Completo para OPTCGSim</button>
+                    </div>
                 </div>
-            </div>
-        <?php 
-            endif;
-        endforeach; 
-        ?>
+            <?php 
+                $global_position++;
+            endforeach; 
+            ?>
+        </div>
         
     </div>
 
@@ -639,18 +622,6 @@ foreach ($legal_decks as $deck) {
             const cards = document.querySelectorAll('.deck-card-wrapper');
             cards.forEach(card => {
                 card.style.display = (color === 'all' || card.classList.contains('c-' + color)) ? "block" : "none";
-            });
-
-            const sections = document.querySelectorAll('.tier-section');
-            sections.forEach(section => {
-                const totalCards = section.querySelectorAll('.deck-card-wrapper');
-                let hasVisible = false;
-                totalCards.forEach(c => {
-                    if (c.style.display !== "none") {
-                        hasVisible = true;
-                    }
-                });
-                section.style.display = hasVisible ? "block" : "none";
             });
         }
     </script>
